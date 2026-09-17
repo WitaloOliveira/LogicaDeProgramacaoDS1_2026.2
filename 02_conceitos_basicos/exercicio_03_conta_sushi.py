@@ -10,3 +10,9 @@ Crie um programa que:
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+valor_comsumo = float(input("digite o valor em (R$): "))
+
+taxa_garcom = valor_comsumo * 0.10
+valor_total = valor_comsumo + taxa_garcom
+
+print(f"o valor final da conta a pagar é: R$ {valor_total:.2f}")
