@@ -11,4 +11,20 @@ Receba a idade do visitante (valor base do ingresso: R$ 100,00):
 Imprima o tipo de bilhete e o valor final a pagar.
 """
 
-# TODO: Desenvolva o algoritmo abaixo:
+# Lê a idade do visitante
+idade = int(input("fale a sua idade: "))
+
+# Verifica a faixa etária para aplicar o desconto ou gratuidade
+if idade < 12:
+    tipo = "Infantil"
+    valor = 50.00
+elif idade >= 60:
+    tipo = "Melhor Idade"
+    valor = 0.00
+else:
+    tipo = "Integral"
+    valor = 100.00
+
+# Imprime o tipo de bilhete e o valor formatado com duas casas decimais
+print(f"Tipo de bilhete: {tipo}")
+print(f"Valor final a pagar: R$ {valor:.2f}")
