@@ -8,12 +8,12 @@ Para cada tentativa incorreta, imprima "Senha Invalida".
 Ao acertar, imprima "Acesso Permitido" e finalize o programa.
 """
 
-# TODO: Desenvolva o algoritmo abaixo:
+# TODO: Desenvolva o algoritmo abaixo
 senha_correta = "2002"
 
 while True:
-    senha = input()
-    if senha == senha_correta:
+    senha = int(input("digite a senha:"))
+    if senha == 2002:
         print("Acesso Permitido")
         break
     else:
